@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Introduction To Programming Via Javascript </h1>
+    <div data-scroll-id="0" data-scroll-identifier="each-article-section" id="js-tutorial">
+
+        <h2>JavaScript Tutorial: Basics to Advanced Concepts</h2>
+    
+            <section class="ibpage-article-header" id="js-fundamentals">
+              <h3>1. JavaScript Fundamentals</h3>
+              <article class="ibpage-article">
+                <ul><li>
+    <strong>Writing JavaScript code in an HTML page</strong>: We must enclose the JavaScript code within the &lt;script&gt; tag in order to include it on an HTML page just as the example shown below:</li></ul><pre><code class="language-javascript hljs">&lt;script type = <span class="hljs-string">"text/javascript"</span>&gt;
+    <span class="hljs-comment">//JavaScript coding can be done inside this tag</span>
+    &lt;/script&gt;</code></pre><p>With this information, the browser can correctly make out that the code is written in JavaScript and execute the code.</p><ul><li>
+    <strong>Inclusion of external JavaScript files in an HTML file</strong>: An external JavaScript file can also be written separately and included within our HTML file. That way, different types of code can be kept isolated from one another, resulting in better-organised files. For instance, if our JavaScript code is written in the file script.js, we can include it in our HTML file in the following way:</li></ul><pre><code class="language-javascript hljs">&lt;script src=<span class="hljs-string">"script.js"</span>&gt;&lt;/script&gt;</code></pre><ul><li>
+    <strong>Usage of Comments in JavaScript coding:</strong> Comments are extremely useful in programming because they can assist others to understand what's going on in your code or they can help you if you have forgotten something. Keep in mind that they must be correctly identified so that the browser does not attempt to execute them. There are two alternatives available in JavaScript in which we can add comments:<ul>
+    <li>
+    <strong>Single-line comments:</strong> If you want to include a single line comment, start it with "//".</li>
+    <li>
+    <strong>Multi-line comments</strong>: If you want to write a comment that spans multiple lines, you can wrap it in /* and */ to prevent it from being executed.</li>
+    </ul>
+    </li></ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-variables">
+              <h3>2. Javascript Variables</h3>
+              <article class="ibpage-article">
+                <p>Variables in JavaScript are simply names of storage locations. In other words, they can be considered as stand-in values that we can use to perform various operations in our JavaScript codes. JavaScript allows the usage of variables in the following three ways:</p><ul><li>
+    <strong>var</strong>: The most commonly used variable in JavaScript is var. It can be redeclared and its value can be reassigned, but only inside the context of a function. When the JavaScript code is run, variables defined using var are moved to the top. An example of a variable declared using the "var" keyword in JavaScript is shown below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-keyword">var</span> x = <span class="hljs-number">140</span>; <span class="hljs-comment">//  variable x can be reassigned a new value and also redeclared</span></code></pre><ul><li>
+    <strong>const</strong>: const variables in JavaScript cannot be used before they appear in the code. They can neither be reassigned values, that is, their value remains fixed throughout the execution of the code, nor can they be redeclared. An example of a variable declared using the "const" keyword in JavaScript is shown below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-keyword">const</span> x = <span class="hljs-number">5</span>; <span class="hljs-comment">// variable x cannot be reassigned a new value or redeclared</span></code></pre><ul><li>
+    <strong>let</strong>: The let variable, like const, cannot be redeclared. But they can be reassigned a value. An example of a variable declared using the "let" keyword in JavaScript is shown below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-keyword">let</span> x = <span class="hljs-number">202</span>; <span class="hljs-comment">// variable x cannot be redeclared but can be reassigned a new value</span></code></pre>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-data-types">
+              <h3>3. Javascript Data Types</h3>
+              <article class="ibpage-article">
+                <p>Different types of values and data can be stored in JavaScript variables. To assign values to JavaScript variables, you use the equals to "=" sign operator. The various data types in JavaScript are as follows:</p><ul>
+    <li>Numbers: These are just numerical values. They can be real numbers or integers. An example of the numbers data type is shown below: <code>var id = 100</code>
+    </li>
+    <li>Variables: The variable data type, as the name suggests, does not have a fixed value. An example of the variables data type is shown below: <code>var y</code>
+    </li>
+    <li>Text (strings): String data types of JavaScript are a combination of multiple characters. An example of the string data type is shown below: <code>var demoString = "Hello World"</code>
+    </li>
+    <li>Operations: Operations in JavaScript can also be assigned to JavaScript variables. An example of these is shown below: <code>var sum = 20 + 30 + 29</code>
+    </li>
+    <li>Boolean values: Boolean values can be true or false. An example of the boolean data type is shown below: <code>var booleanValue = true</code>
+    </li>
+    <li>Constant numbers: As the name suggests, these data types have a fixed value. An example of the constant data type is shown below: <code>const g = 9.8</code>
+    </li>
+    <li>Objects: JavaScript objects are containers for named values called properties. They possess their own data members and methods. An example of the objects data type is shown below:<br><code>var name = {name:"Jon Snow", id:"AS123"}</code>
+    </li>
+    </ul><figure class="image image_resized" style="width:75%;"><img data-src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/771/original/Javascript_Data_Types.png?1644590361" class="" src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/771/original/Javascript_Data_Types.png?1644590361"></figure><blockquote><p>Note: It is important to remember that variables in JavaScript are case-sensitive. As a result, "small" and "Small" will be treated as separate variables in JavaScript.</p></blockquote>
+              </article>
+            </section>
+              <div class="ibpage__download-container">
+      <div class="ibpage__download-banner">
+        <div class="ibpage__download-text">
+          <i class="icon-bell"></i>
+          <span>
+            You can download a PDF version of Javascript Cheat Sheet.
+          </span>
+        </div>
+        <div class="ibpage__download-action">
+          
+    <a class=" hidden ibpage__downloadable-a ibpage__downloadable download-pdf gtm-track-element" data-source="in_content" data-gtm-text="Download PDF" data-gtm-allowed-actions="click" data-gtm-parent="Download PDF">
+      <span>
+        <img class="ibpage__downloadable-img" width="24" height="24" src="https://assets.interviewbit.com/assets/ibpp/interview_guides/download_v2-f7bcad529b2845c93dddc78cd31acf9ecb098c42854a1757f0f8949950377c02.svg.gz">
+        
+      </span>
+    
+      <span class=" text">
+        Download PDF
+      </span>
+    </a>
+    
+    <a class="auth-trigger gtm-track-element ibpage__downloadable ibpage__downloadable-a enforce-signin" style="" href="javascript:void(0)" data-trigger="ibpp-auth-flow" data-action="flow-trigger" data-target="auth" data-mode="login" data-gtm-element="Download PDF" data-gtm-allowed-actions="click hover" data-source="in_content">
+      
+      <span>
+        <img class="ibpage__downloadable-img" width="24" height="24" src="https://assets.interviewbit.com/assets/ibpp/interview_guides/download_v2-f7bcad529b2845c93dddc78cd31acf9ecb098c42854a1757f0f8949950377c02.svg.gz" data-gtm-section="pdf" data-gtm-element="Download PDF">
+        
+      </span>
+      <span class=" text" data-gtm-section="pdf" data-gtm-text="Download PDF" data-gtm-element="Download PDF">
+        Download PDF
+      </span>
+    
+    </a>
+    
+    <a id="auto-download-modal-trigger" data-id="" data-parent="" class="modal-trigger hidden gtm-track-element" data-gtm-allowed-actions="click" data-gtm-text="" data-gtm-type="button" data-gtm-parent="auto-download-modal" data-action="modal-open" data-target="auto-download-modal" data-gtm-tracking-allowed="" onclick="">
+      
+      &nbsp;
+    
+    </a>
+    <div id="auto-download-modal" class="sr-modal  ">
+      <div class="sr-modal__content sr-modal__content--center ">
+        <div class="sr-modal__body ">
+          
+      <div class="p-h-10 p-v-10 gtm-track-element">
+        <div class="row" style="justify-content: space-between;  align-items: center;">
+          <h3>Download PDF</h3>
+          <a class="sr-modal__close" data-target="auto-download-modal" data-action="modal-close">
+            <i class="icon-close"></i>
+          </a>
+        </div>
+        <hr>
+        <div class="m-v-10 text-center">
+          Your requested download is ready!<br>
+          Click
+          <a class="pointer gtm-track-element" data-source="in_content" data-action="start-download" data-gtm-section="pdf" data-gtm-element="here" data-gtm-text="Download PDF" data-gtm-allowed-actions="click">
+            here
+          </a>
+          to download.
+        </div>
+      </div>
+    
+        </div>
+      </div>
+    </div>
+    
+        </div>
+      </div>
+    </div>
+    
+            <section class="ibpage-article-header" id="js-operators">
+              <h3>4. JavaScript Operators</h3>
+              <article class="ibpage-article">
+                <p>You can use variables to conduct a variety of tasks using JavaScript operators. The various types of operators in JavaScript are as follows:</p><ul>
+    <li>
+    <strong>Fundamental Operators</strong>: These operators are used to perform basic operations like addition, multiplication, etc. in JavaScript. A list of all the Fundamental operators in JavaScript is as follows:<ul>
+    <li>
+    <strong>+</strong>: The Addition Operator is used to add two numbers</li>
+    <li>
+    <strong>-</strong>: The Subtraction Operator is used to subtract two numbers</li>
+    <li>
+    <strong>*</strong>: The MultiplicationOperator is used to multiply two numbers</li>
+    <li>
+    <strong>/</strong>: The Division Operator is used to divide two numbers</li>
+    <li>
+    <strong>(...)</strong>: In general, operations within brackets are executed earlier than that outside. This grouping operator surrounds an expression or sub-expression with a pair of parentheses to override the conventional operator precedence, allowing operators with lower precedence to be evaluated before operators with higher precedence. It does exactly what it says: it groups the contents of the parentheses.</li>
+    <li>
+    <strong>%</strong>: The Modulus operator is used to get the remainder when an integer number is divided by another integer number.</li>
+    <li>
+    <strong>++</strong>: The Increment operator is used to increase the value of numbers by one.</li>
+    <li>
+    <strong>--</strong>: The Decrement operator is used to decrease the value of numbers by one.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Bitwise Operators</strong>: &nbsp;All the operations dealing with the bits of the numbers can be performed by the bitwise operators in JavaScript. A list of all the Bitwise operators in JavaScript is as follows:<ul>
+    <li>
+    <strong>&amp;</strong>: The bitwise AND operator returns a 1 in every bit position where both operands' corresponding bits are 1.</li>
+    <li>
+    <strong>|</strong>: &nbsp;The bitwise OR operator (|) returns a 1 in each bit position where either or both operands' corresponding bits are 1.</li>
+    <li>
+    <strong>~</strong>: The bitwise NOT operator reverses the operand's bits. It turns the operand into a 32-bit signed integer, just like other bitwise operators.</li>
+    <li>
+    <strong>^</strong>: The bitwise XOR operator () returns a 1 in each bit position where the corresponding bits of both operands are 1s but not both.</li>
+    <li>
+    <strong>&lt;&lt;</strong>: The left shift operator shifts the first operand to the left by the provided number of bits. Extra bits that have been relocated to the left are discarded. From the right, zero bits are shifted in.</li>
+    <li>
+    <strong>&gt;&gt;</strong>: The right shift operator (&gt;&gt;) moves the first operand to the right by the provided number of bits. Extra bits that have been relocated to the right are discarded. The leftmost bit's copies are shifted in from the left. The sign bit (the leftmost bit) does not change since the new leftmost bit has the same value as the old leftmost bit. As a result, the term "sign-propagating" was coined.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Comparison Operators:</strong> &nbsp;A list of all the Comparison operators in JavaScript is as follows:<ul>
+    <li>
+    <strong>==</strong>: The equality operator (==) returns a Boolean value when its two operands are equal. It tries to convert and compare operands of different kinds, unlike the rigorous equivalent operator.</li>
+    <li>
+    <strong>===</strong>: The equivalent operator (===) returns a Boolean value when its two operands are equal and they have the same type. It tries to convert and compare operands of the same kinds, unlike the equality operator.</li>
+    <li>
+    <strong>!=</strong>: The inequality operator (!=) returns a Boolean value if the two operands are not equal. It tries to convert and compare operands of different kinds, unlike the rigorous inequivalent operator.</li>
+    <li>
+    <strong>!==</strong>: The inequivalent operator (!=) returns a Boolean value if the two operands are not equal or they are not of the same type. It tries to convert and compare operands of the same kinds, unlike the inequality operator.</li>
+    <li>
+    <strong>?</strong>: The conditional (ternary) operator is the only one in JavaScript that takes three operands: a condition followed by a question mark (? ), an expression to execute if the condition is true followed by a colon (:), and lastly an expression to execute if the condition is false. As an alternative to an if...else statement, this operator is commonly used.&gt;: The Greater than operator returns true if the operand to its left is greater in value than the operand to its right.</li>
+    <li>
+    <strong>&lt;</strong>: The Lesser than operator returns true if the operand to its left is lesser in value than the operand to its right.</li>
+    <li>
+    <strong>&gt;=</strong>: The Greater than equals to operator returns true if the operand to its left is greater in value or equal in value than the operand to its right.</li>
+    <li>
+    <strong>&lt;=</strong>: The Lesser than equals to operator returns true if the operand to its left is lesser in value or equal in value than the operand to its right.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Logical Operators</strong>: &nbsp;A list of all the Logical operators in JavaScript is as follows:<ul>
+    <li>
+    <strong>&amp;&amp;</strong>: If and only if all of the operands are true, the logical AND operator (logical conjunction) for a set of Boolean operands is true. It will be false if it is not. When evaluating from left to right, the operator returns the value of the first falsy operand encountered, or the value of the last operand if all operands are truth.</li>
+    <li>
+    <strong>||</strong>: If and only if one or more of its operands are true, the logical OR operator (logical disjunction) is true for a set of operands. It's most often used with logical (Boolean) values. It returns a Boolean value when this is the case. The || operator, on the other hand, returns the value of one of the provided operands, hence using it with non-Boolean values will result in an error.</li>
+    <li>
+    <strong>!</strong>: The logical NOT operator (logical complement, negation) converts truth to falsity. It's most commonly used with logical (Boolean) values. It returns false if its sole operand can be transformed to true when used with non-Boolean values; otherwise, it returns true.</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-if-else">
+              <h3>5. JavaScript If-Else Statements</h3>
+              <article class="ibpage-article">
+                <p>The if-else statements are simple to comprehend. You can use them to set conditions for when your code runs. If specific requirements are met, something is done; if they are not met, another action is taken. The switch statement is a concept that is comparable to if-else. The switch however allows you to choose which of several code blocks to run. The syntax of if-else statements in JavaScript is given below:</p><pre><code class="language-javascript hljs"><span class="hljs-keyword">if</span> (check condition) {
+       <span class="hljs-comment">// block of code to be executed if the given condition is satisfied</span>
+    } <span class="hljs-keyword">else</span> {
+       <span class="hljs-comment">// block of code to be executed if the given condition is not satisfied</span>
+    }</code></pre><p><strong>Loops in JavaScript:</strong></p><p>Most programming languages include loops. They let you run code blocks as many times as you like with different values. Loops can be created in a variety of ways in JavaScript:</p><ul><li>
+    <strong>the for loop</strong>: The most frequent method of creating a loop in JavaScript. Its syntax is shown below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-keyword">for</span> (initialization <span class="hljs-keyword">of</span> the loop variable; condition checking <span class="hljs-keyword">for</span> the loop; updation after the loop) {
+       <span class="hljs-comment">// code to be executed in loop</span>
+    }</code></pre><ul><li>
+    <strong>the while loop</strong>: Establishes the conditions under which a loop will run. Its syntax is shown below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-comment">// Initialization of the loop variable is done before the while loop begins</span>
+    <span class="hljs-keyword">while</span>(condition checking <span class="hljs-keyword">for</span> the loop){
+    <span class="hljs-comment">// 1. code to be executed in loop</span>
+    <span class="hljs-comment">// 2. updation of the loop variable</span>
+    }</code></pre><ul><li>
+    <strong>the do-while loop</strong>: Similar to the while loop, but it runs at least once and checks at the end to see whether the condition is met to run again. Its syntax is shown below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-comment">// Initialization of the loop variable is done before the do-while loop begins</span>
+    <span class="hljs-keyword">do</span>{
+    <span class="hljs-comment">// 1. code to be executed in loop</span>
+    <span class="hljs-comment">// 2. updation of the loop variable</span>
+    }<span class="hljs-keyword">while</span>(condition checking <span class="hljs-keyword">for</span> the loop);</code></pre><p>There are two statements that are important in the context of loops:</p><ul>
+    <li>
+    <strong>the continue statement</strong>: Skip parts of the loop if certain conditions are met.</li>
+    <li>
+    <strong>break statement:</strong> Used to stop and exit the cycle when specific conditions are met.</li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-arrays">
+              <h3>6. JavaScript Arrays</h3>
+              <article class="ibpage-article">
+                <p>Arrays are the next item on our JavaScript cheat sheet. Arrays are used in a variety of programming languages. They are a method of categorising variables and attributes. Arrays can be defined as a collection of objects of the same type. In JavaScript, here's how one can make an array of cars:</p><pre><code class="language-javascript hljs"><span class="hljs-keyword">var</span> cars = [<span class="hljs-string">"Mercedes"</span>, <span class="hljs-string">"Tesla"</span>,<span class="hljs-string">"Volvo"</span>];</code></pre><p>Now that we understand how to make arrays, we can perform a bunch of operations on them. Let us take a look at some JavaScript methods which can be used to perform various types of operations on arrays:</p><ul>
+    <li>
+    <strong>pop():</strong> This method is used for removing the last element of an array.</li>
+    <li>
+    <strong>push(): </strong>This method is used for adding a new element at the very end of an array.</li>
+    <li>
+    <strong>concat(): </strong>This method is used for joining various arrays into a single array.</li>
+    <li>
+    <strong>reverse():</strong> This method is used for reversing the order of the elements in an array.</li>
+    <li>
+    <strong>shift(): </strong>This method is used for removing the first element of an array.</li>
+    <li>
+    <strong>slice(): </strong>This method is used for pulling a copy of a part of an array into a new array.</li>
+    <li>
+    <strong>splice()</strong>: This method is used for adding elements in a particular way and position.</li>
+    <li>
+    <strong>toString(): </strong>This method is used for converting the array elements into strings.</li>
+    <li>
+    <strong>unshift(): </strong>This method is used for adding new elements at the beginning of the array.</li>
+    <li>
+    <strong>valueOf(): </strong>This method is used for returning the primitive value of the given object.</li>
+    <li>
+    <strong>indexOf(): </strong>This method is used for returning the first index at which a given element is found in an array.</li>
+    <li>
+    <strong>lastIndexOf(): </strong>This method is used for returning the final index at which a given element appears in an array.</li>
+    <li>
+    <strong>join(): </strong>This method is used for combining elements of an array into one single string and then returning it.</li>
+    <li>
+    <strong>sort(): </strong>This method is used for sorting the array elements based on some condition.</li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-functions">
+              <h3>7. JavaScript Functions</h3>
+              <article class="ibpage-article">
+                <p>JavaScript Functions can be defined as chunks of code written in JavaScript to perform a single task. A function in JavaScript looks like this:</p><pre><code class="language-javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nameOfTheFunction</span>(<span class="hljs-params">parameterOne, parameterTwo, parameterThree, parameterFour,....,parameterN</span>) </span>{
+       <span class="hljs-comment">// Job or Task of the function </span>
+    }</code></pre><p>The code above consists of the "function" keyword and a name, as you can see. The parameters of the function are enclosed in brackets, while the function's task code and output is enclosed in curly brackets. You can make your own, but there are a few default functions to make your life easier. Although we will be discussing various methods throughout this cheat sheet, let us discuss in brief two important types of JavaScript functions in this section:</p><ul>
+    <li>
+    <strong>Functions For Throwing Data As Output</strong>: The output of data is a common application for functions. You have the following options for outputting data:<ul>
+    <li>
+    <strong>prompt()</strong>: This function is used for creating a dialogue box for taking input from the user.</li>
+    <li>
+    <strong>alert()</strong>: This function is used for outputting information in an alert box in the browser window</li>
+    <li>
+    <strong>console.log()</strong>: This function is used for writing data to the browser's console and is used for the purpose of debugging code by developers.</li>
+    <li>
+    <strong>document.write()</strong>: This function is used for writing straight to our HTML document</li>
+    <li>
+    <strong>confirm()</strong>: This function is used for opening up a yes or no dialogue box and for returning a boolean value depending upon the user's click</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Global Functions: </strong>Every browser that can run JavaScript has a set of global functions built-in. Some of them are as follows:<ul>
+    <li>
+    <strong>parseFloat():</strong> This function is used for parsing the argument passed to it and returning a floating-point number.</li>
+    <li>
+    <strong>parseInt(): </strong>This function is used for parsing the argument passed to it and returning an integral number.</li>
+    <li>
+    <strong>encodeURI():</strong> This function is used for encoding a URI into a UTF-8 encoding scheme.</li>
+    <li>
+    <strong>decodeURI(): </strong>This function is used for decoding a Uniform Resource Identifier (URI) made by encodeURI() function or similar functions.</li>
+    <li>
+    <strong>encodeURIComponent():</strong> This function is used for the same purpose as encodeURI() only for URI components.</li>
+    <li>
+    <strong>decodeURIComponent():</strong> This function is used for decoding a URI component.</li>
+    <li>
+    <strong>isNaN(): </strong>This function is used for determining if a given value is Not a Number or not.</li>
+    <li>
+    <strong>Number(): </strong>This function is used for returning a number converted from what is passed as an argument to it.</li>
+    <li>
+    <strong>eval(): </strong>This function is used for evaluating JavaScript programs presented as strings.</li>
+    <li>
+    <strong>isFinite(): </strong>This function is used for determining if a passed value is finite or not.</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="scope-and-scope-chain-in-js">
+              <h3>8.  Scope and Scope Chain in JavaScript</h3>
+              <article class="ibpage-article">
+                <p><strong>1. Scope:</strong> The accessibility or visibility of variables in JavaScript is referred to as scope. That is, which sections of the program can access a given variable and where the variable can be seen. There are usually three types of scopes:</p><ul><li>
+    <strong>Global Scope:</strong> The global scope includes any variable that is not contained within a function or block (a pair of curly braces). Global scope variables can be accessed from anywhere in the program. An example showing the global scope of a variable is given below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-keyword">var</span> hello = <span class="hljs-string">'Hello!'</span>;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
+     <span class="hljs-built_in">console</span>.log(hello);
+    }
+    <span class="hljs-comment">// 'Hello!' gets logged</span>
+    sayHello();</code></pre><ul><li>
+    <strong>Local or Function Scope: </strong>Variables declared inside a function are local variables. They can only be accessed from within that function; they are not accessible from outside code. An example showing local scope of a variable is given below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span>(<span class="hljs-params"></span>) </span>{
+     <span class="hljs-keyword">var</span> hello = <span class="hljs-string">'Hello!'</span>;
+     <span class="hljs-built_in">console</span>.log(hello);
+    }
+    <span class="hljs-comment">// 'Hello!' gets logged</span>
+    sayHello();</code></pre><p>console.log(hello); // Uncaught ReferenceError: hello is not defined</p><ul><li>
+    <strong>Block Scope</strong>: Unlike var variables, let and const variables can be scoped to the nearest pair of curly brackets in ES6. They can't be reached from outside that pair of curly braces, which means they can't be accessed from the outside. An example showing the block scope of a variable is given below:</li></ul><pre><code class="language-javascript hljs">{
+     <span class="hljs-keyword">let</span> hello = <span class="hljs-string">'Hello!'</span>;
+     <span class="hljs-keyword">var</span> language = <span class="hljs-string">'Hindi'</span>;
+     <span class="hljs-built_in">console</span>.log(hello); <span class="hljs-comment">// 'Hello!' gets logged</span>
+    }
+    <span class="hljs-built_in">console</span>.log(language); <span class="hljs-comment">// 'Hindi!' gets logged</span>
+    <span class="hljs-built_in">console</span>.log(hello); <span class="hljs-comment">// Uncaught ReferenceError: hello is not defined</span></code></pre><p><strong>2. Scope Chain: </strong>When a variable is used in JavaScript, the JavaScript engine searches the current scope for the variable's value. If it can't find the variable in the inner scope, it will look into the outer scope until it finds it or reaches the global scope.</p><p>If it still can't identify the variable, it will either return an error or implicitly declare the variable in the global scope (if not in strict mode). Let us take into consideration the following example:</p><pre><code class="language-javascript hljs"><span class="hljs-keyword">let</span> a = <span class="hljs-string">'a'</span>;
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+     <span class="hljs-keyword">let</span> b = <span class="hljs-string">'b'</span>;
+     <span class="hljs-built_in">console</span>.log(b); <span class="hljs-comment">// 'b' gets logged</span>
+     <span class="hljs-built_in">console</span>.log(a); <span class="hljs-comment">// 'a' gets logged</span>
+     randomNumber = <span class="hljs-number">33</span>;
+     <span class="hljs-built_in">console</span>.log(randomNumber);  <span class="hljs-comment">// 33 gets logged</span>
+    }
+    foo();</code></pre><p>When the function foo() is called, the JavaScript engine searches for the 'b' variable in the current scope and finds it. Then it looks for the 'a' variable in the current scope, which it can't find, so it moves on to the outer scope, where it finds it (i.e global scope).</p><p>After that, we assign 33 to the 'randomNumber' variable, causing the JavaScript engine to search for it first in the current scope, then in the outer scope.</p><p>If the script isn't in strict mode, the engine will either create a new variable called randomNumber and assign 33 to it, or it will return an error (if not in strict mode).</p><p>As a result, the engine will traverse the scope chain till the time when a variable is found.</p>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-hoisting">
+              <h3>9.  JavaScript Hoisting</h3>
+              <article class="ibpage-article">
+                <p>Prior to executing the code, the interpreter appears to relocate the declarations of functions, variables, and classes to the top of their scope using a process known as Hoisting in JavaScript. Functions can be securely utilised in code before they have been declared thanks to hoisting. Variable and class declarations are likewise hoisted, allowing them to be referenced prior to declaration. It should be noted that doing so can result in unforeseen mistakes and is not recommended. There are usually two types of Hoisting:</p><ul><li>
+    <strong>Function Hoisting</strong>: Hoisting has the advantage of allowing you to use a function before declaring it in your code as shown in the code snippet given below. Without function hoisting, we would have to first write down the function display and only then can we call it.</li></ul><pre><code class="language-javascript hljs">display(<span class="hljs-string">"Lion"</span>);
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">display</span>(<span class="hljs-params">inputString</span>) </span>{
+     <span class="hljs-built_in">console</span>.log(inputString); <span class="hljs-comment">// 'Lion' gets logged </span>
+    }</code></pre><ul><li>
+    <strong>Variable Hoisting: </strong>You can use a variable in code before it is defined and/or initialised because hoisting works with variables as well. JavaScript, however, only hoists declarations, not initializations! Even if the variable was initially initialised then defined, or declared and initialised on the same line, initialization does not occur until the associated line of code is run. The variable has its default initialization till that point in the execution is reached (undefined for a variable declared using var, otherwise uninitialized). An example of variable hoisting is shown below:</li></ul><pre><code class="language-javascript hljs"><span class="hljs-built_in">console</span>.log(x) <span class="hljs-comment">// 'undefined' is logged from hoisted var declaration (instead of 7)</span>
+    <span class="hljs-keyword">var</span> x <span class="hljs-comment">// Declaration of variable x</span>
+    x = <span class="hljs-number">7</span>; <span class="hljs-comment">// Initialization of variable x to a value 7</span>
+    <span class="hljs-built_in">console</span>.log(x); <span class="hljs-comment">// 7 is logged post the line with initialization's execution.</span></code></pre>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-closures">
+              <h3>10. JavaScript Closures</h3>
+              <article class="ibpage-article">
+                <p>A closure is a function that has been bundled together (enclosed) with references to its surroundings (the lexical environment). In other words, a closure allows an inner function to access the scope of an outside function. Closures are formed every time a function is created in JavaScript, during function creation time. An example of closures in Javascript is given below:</p><pre><code class="language-javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">subtractor</span>(<span class="hljs-params">subtractingInteger</span>) </span>{
+     <span class="hljs-keyword">return</span> <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">a</span>) </span>{
+       <span class="hljs-keyword">return</span> a - subtractingInteger;
+     };
+    }
+    <span class="hljs-keyword">var</span> subtract2 = subtractor(<span class="hljs-number">2</span>);
+    <span class="hljs-keyword">var</span> subtract5 = subtractor(<span class="hljs-number">5</span>);
+    <span class="hljs-built_in">console</span>.log(subtract2(<span class="hljs-number">5</span>));  <span class="hljs-comment">// 3 is logged</span>
+    <span class="hljs-built_in">console</span>.log(subtract5(<span class="hljs-number">5</span>)); <span class="hljs-comment">// 0 is logged</span></code></pre><p>In this example, we have developed a function subtractor(subtractingInteger) that takes a single parameter subtractingInteger and returns a new function. Its return function accepts only one input, a, and returns the difference of a and subtractingInteger. The function 'subtractor' is essentially a function factory. It creates functions that have the ability to subtract a specified value from their arguments. The function factory creates two new functions in the example above: one that subtracts 2 from its argument and one that subtracts 5 from its arguments. Both subtract2 and subtract5 are closures. They have the same function body definition, but they hold lexical surroundings that are distinct. subtractingInteger is 2 in subtract2's lexical environment, but subtractingInteger is 5 in subtract5's lexical environment.</p>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-strings">
+              <h3>11. JavaScript Strings</h3>
+              <article class="ibpage-article">
+                <p>As mentioned earlier, Strings are nothing but a combination of characters that can be used to perform a variety of tasks. JavaScript provides so many methods for Strings alone that it makes sense to cover Strings as a standalone topic in this cheat sheet. Let us now look at the various escape sequences in JavaScript and the methods which JavaScript provides for strings:</p><ul>
+    <li>
+    <strong>Escape Sequences or Escape Characters: </strong>An escape character is a character in computers and telecommunications that causes the following characters in a character sequence to take on a different meaning. Metacharacters include escape characters, which are a subset of metacharacters. In general, whether something is an escape character or not is determined by the context. For instance, Strings in JavaScript are delimited by single or double-quotes. You must use special characters in a string if you want to utilise quote marks. A few of the escape characters allowed by JavaScript are as follows:<ul>
+    <li>
+    <strong>\' </strong>— Single quotes</li>
+    <li>
+    <strong>\" </strong>— Double quotes</li>
+    <li>
+    <strong>\t </strong>— Horizontal tab</li>
+    <li>
+    <strong>\v</strong> — Vertical tab</li>
+    <li>
+    <strong>\\</strong> — Backslash</li>
+    <li>
+    <strong>\b</strong> — Backspace</li>
+    <li>
+    <strong>\f</strong> — Form feed</li>
+    <li>
+    <strong>\n</strong> — Newline</li>
+    <li>
+    <strong>\r </strong>— Carriage return</li>
+    </ul>
+    </li>
+    <li>
+    <strong>String methods:</strong> As mentioned earlier, JavaScript provides a lot of methods to manipulate its Strings. Let us take a look at some of them:<ul>
+    <li>
+    <strong>toLowerCase()</strong> — This method is used for converting strings to lower case</li>
+    <li>
+    <strong>toUpperCase()</strong> — This method is used for converting strings to upper case</li>
+    <li>
+    <strong>charAt()</strong> — This method is used for returning the character at a particular index of a string</li>
+    <li>
+    <strong>charCodeAt() </strong>— This method is used for returning to us the Unicode of the character at a &nbsp;given index</li>
+    <li>
+    <strong>fromCharCode()</strong> — This method is used for returning a string made from a particular sequence of UTF-16 code units</li>
+    <li>
+    <strong>concat()</strong> — This method is used for concatenating or joining multiple strings into a single string</li>
+    <li>
+    <strong>match()</strong> — This method is used for retrieving the matches of a string against a pattern string which is provided</li>
+    <li>
+    <strong>replace()</strong> — This method is used for finding and replacing a given text in the string</li>
+    <li>
+    <strong>indexOf() </strong>— This method is used for providing the index of the first appearance of a given text inside the string</li>
+    <li>
+    <strong>lastIndexOf()</strong> — This method is similar to the indexOf() methods and only differs in the fact that it searches for the last occurrence of the character and searches backwards</li>
+    <li>
+    <strong>search()</strong> — This method is used for executing a search for a matching text and returning the index of the searched string</li>
+    <li>
+    <strong>substr()</strong> — &nbsp;This method is pretty much the same as the slice() method but the extraction of a substring in it depends on a given number of characters</li>
+    <li>
+    <strong>slice()</strong> — This method is used for extracting an area of the string and returning it</li>
+    <li>
+    <strong>split()</strong> — This method is used for splitting a string object into an array of strings at a particular index</li>
+    <li>
+    <strong>substring()</strong> — Even this method is almost the same as the slice() method but it does not allow negative positions</li>
+    <li>
+    <strong>valueOf()</strong> — This method is used for returning the primitive value (one without any properties or methods) of a string object</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="dom-document-object-model-in-js">
+              <h3>12. Document Object Model (DOM) in JavaScript</h3>
+              <article class="ibpage-article">
+                <p>The Document Object Model (DOM) is the structure of a webpage's code. There are many different ways to build and alter HTML elements with JavaScript (called nodes).&nbsp;</p><ul>
+    <li>
+    <strong>Node Properties: </strong>Let us first take a look at some of the properties of a JavaScript DOM node:<ul>
+    <li>
+    <strong>attributes</strong> — Gets a live list of all the characteristics associated with an element.</li>
+    <li>
+    <strong>baseURI</strong> — Returns an HTML element's absolute base URL.</li>
+    <li>
+    <strong>childNodes </strong>— Returns a list of the child nodes of an element.</li>
+    <li>
+    <strong>firstChild </strong>— Returns the element's first child node.</li>
+    <li>
+    <strong>lastChild</strong> — An element's final child node</li>
+    <li>
+    <strong>nextSibling </strong>— Returns the next node in the same node tree level as the current node.</li>
+    <li>
+    <strong>nodeName</strong> —Returns a node's name.</li>
+    <li>
+    <strong>nodeType </strong>— Returns the node's type.</li>
+    <li>
+    <strong>nodeValue</strong> — Sets or returns a node's value.</li>
+    <li>
+    <strong>ownerDocument</strong> — This node's top-level document object.</li>
+    <li>
+    <strong>parentNode </strong>— Returns the element's parent node.</li>
+    <li>
+    <strong>previousSibling</strong> — Gets the node that comes before the current one.</li>
+    <li>
+    <strong>textContent</strong> — Sets or returns a node's and its descendants' textual content.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Node Methods: </strong>Let us now take a look at some of the methods provided by JavaScript to manipulate these nodes in the DOM:<ul>
+    <li>
+    <strong>appendChild()</strong> — Adds a new child node as the last child node to an element.</li>
+    <li>
+    <strong>cloneNode()</strong> is a function that duplicates an HTML element.</li>
+    <li>
+    <strong>compareDocumentPosition()</strong> — Compares two elements' document positions.</li>
+    <li>
+    <strong>getFeature()</strong> returns an object that implements the APIs of a feature.</li>
+    <li>
+    <strong>hasAttributes()</strong> — If an element has any attributes, it returns true; otherwise, it returns false.</li>
+    <li>
+    <strong>hasChildNodes()</strong> — If an element has any child nodes, it returns true; otherwise, it returns false.</li>
+    <li>
+    <strong>insertBefore() </strong>— Adds a new child node to the left of an existing child node.</li>
+    <li>
+    <strong>isDefaultNamespace()</strong> returns true if a given namespaceURI is the default, and false otherwise.</li>
+    <li>
+    <strong>isEqualNode()</strong> — Determines whether two elements are the same.</li>
+    <li>
+    <strong>isSameNode()</strong> — Determines whether two elements belong to the same node.</li>
+    <li>
+    <strong>isSupported()</strong> — Returns true if the element supports the provided feature.</li>
+    <li>
+    <strong>lookupNamespaceURI()</strong> — Returns the namespace URI for a specific node.</li>
+    <li>
+    <strong>lookupPrefix</strong> — If the prefix for a given namespace URI is present, lookupPrefix() returns a DOMString containing it.</li>
+    <li>
+    <strong>normalise() </strong>— In an element, joins neighbouring text nodes and removes empty text nodes.</li>
+    <li>
+    <strong>removeChild()</strong> — Removes a child node from an element using the Child() method.</li>
+    <li>
+    <strong>replaceChild()</strong> — In an element, this function replaces a child node.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Element Methods:</strong> Given below are some of the element methods provided by JavaScript:<ul>
+    <li>
+    <strong>getAttribute()</strong> — Returns the value of an element node's provided attribute.</li>
+    <li>
+    <strong>getAttributeNS()</strong> returns the string value of an attribute with the namespace and name supplied.</li>
+    <li>
+    <strong>getAttributeNode()</strong> — Returns the attribute node supplied.</li>
+    <li>
+    <strong>getAttributeNodeNS()</strong> — Returns the attribute node for the specified namespace and name for the attribute.</li>
+    <li>
+    <strong>getElementsByTagName()</strong> — Returns a list of all child elements whose tag name is supplied.</li>
+    <li>
+    <strong>getElementsByTagNameNS()</strong> — Returns a live HTMLCollection of items belonging to the provided namespace with a certain tag name.</li>
+    <li>
+    <strong>hasAttribute()</strong> — If an element has any attributes, it returns true; otherwise, it returns false.</li>
+    <li>
+    <strong>hasAttributeNS()</strong> returns true or false depending on whether the current element in a particular namespace has the supplied attribute.</li>
+    <li>
+    <strong>removeAttribute() </strong>— Removes an element's supplied attribute.</li>
+    <li>
+    <strong>removeAttributeNS()</strong> — Removes an attribute from an element in a specific namespace.</li>
+    <li>
+    <strong>setAttributeNode() </strong>— Sets or modifies an attribute node.</li>
+    <li>
+    <strong>setAttributeNodeNS() </strong>— Sets a new namespaced attribute node to an element with setAttributeNodeNS().</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-data-transformation">
+              <h3>13.  JavaScript Data Transformation</h3>
+              <article class="ibpage-article">
+                <p>Data Transformation in JavaScript can be done with the usage of higher-order functions. Higher-order functions are those functions in JavaScript which can accept one or more functions as inputs and return a function as the result. All higher-order functions that take a function as input are map(), filter(), and reduce(). Let us now take a look at how these functions can be used. One thing to note over here is that because all of these functions are part of the JavaScript Array prototype, they can be used directly on an array.</p><p><strong>map() method</strong>: The map method applies a function to each array element. The callback function receives each element of the array and returns a new array of the same length. This method can be used to conduct the same operation/transformation on each element of an array and return a new array with the modified values of the same length. An example of the usage of the map() method is given below:</p><pre><code class="language-javascript hljs"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>];
+    <span class="hljs-keyword">var</span> triple  = arr.map(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x * <span class="hljs-number">3</span>);
+    triple; <span class="hljs-comment">// [30,60,90]</span></code></pre><p><strong>filter() method:&nbsp;</strong> Using the filter() method, items that do not meet a criterion are removed from the array. The callback function receives every element of the array. If the callback returns true on each iteration, the element will be added to the new array; otherwise, it will not be added. An example of the usage of the filter() method is given below:</p><pre><code class="language-javascript hljs"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">13</span>,<span class="hljs-number">40</span>,<span class="hljs-number">47</span>];
+    <span class="hljs-keyword">var</span> odd = arr.filter(<span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> x % <span class="hljs-number">2</span>);
+    odd; <span class="hljs-comment">// [13,47]</span></code></pre><p><strong>reduce() method: </strong>The reduce() method can combine the items of an array into a single value. When using reduce, we must declare the accumulator's beginning value (final result). Each iteration, we do some operation inside the callback, which is then added to the accumulator. An example of the usage of the reduce() method is given below:</p><pre><code class="language-javascript hljs"><span class="hljs-keyword">var</span> arr = [<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>];
+    <span class="hljs-keyword">var</span> counter = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">let</span> answer = arr.reduce(<span class="hljs-function">(<span class="hljs-params">accumulator, value</span>) =&gt;</span> value + accumulator, counter);
+    <span class="hljs-built_in">console</span>.log(answer) <span class="hljs-comment">// answer = 10 + 20 + 30 = 60</span></code></pre>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-regular-exp">
+              <h3>14. JavaScript Regular Expressions </h3>
+              <article class="ibpage-article">
+                <p>Regular expressions can be defined as search patterns that can be used to match string character combinations. Text search and text to replace procedures can both benefit from the search pattern. Let us look at how JavaScript allows Regular Expressions:</p><ul>
+    <li>
+    <strong>Pattern Modifiers</strong>: Following are the pattern modifiers that are allowed in JavaScript:<ul>
+    <li>
+    <strong>e</strong> — &nbsp;This is used for evaluating replacement</li>
+    <li>
+    <strong>i </strong>— This is used for performing case-insensitive matching</li>
+    <li>
+    <strong>U </strong>— This is used for ungreedy pattern</li>
+    <li>
+    <strong>g </strong>— This is used for performing global matching</li>
+    <li>
+    <strong>m </strong>— This is used for performing multiple line matching</li>
+    <li>
+    <strong>s</strong> — This is used for treating strings as a single line</li>
+    <li>
+    <strong>x</strong> — This is used for allowing comments and whitespace in the pattern</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Metacharacters: </strong>Following are the metacharacters that are allowed in JavaScript:<ul>
+    <li>
+    <strong>. </strong>— This is used for finding a single character, except newline or line terminator</li>
+    <li>
+    <strong>\w</strong> — This is used for finding Word characters</li>
+    <li>
+    <strong>\W</strong> — This is used for finding Non-word characters</li>
+    <li>
+    <strong>\s</strong> — This is used for finding Whitespace characters</li>
+    <li>
+    <strong>\S</strong> — This is used for finding Non-whitespace characters</li>
+    <li>
+    <strong>\b</strong> — This is used for finding matches at the beginning or at the end of a word</li>
+    <li>
+    <strong>\B </strong>— This is used for finding matches not at the beginning or at the end of a word</li>
+    <li>
+    <strong>\0</strong> — This is used for finding NULL characters</li>
+    <li>
+    <strong>\n </strong>— This is used for finding a new line character</li>
+    <li>
+    <strong>\f</strong> — This is used for finding a Form feed character</li>
+    <li>
+    <strong>\r</strong> — This is used for finding a Carriage return character</li>
+    <li>
+    <strong>\t </strong>— This is used for finding a Tab character</li>
+    <li>
+    <strong>\v</strong> — This is used for finding a Vertical tab character</li>
+    <li>
+    <strong>\d</strong> — This is used for finding digits</li>
+    <li>
+    <strong>\D </strong>— This is used for finding non-digit characters</li>
+    <li>
+    <strong>\xxx </strong>— This is used for finding characters given by an octal number xxx</li>
+    <li>
+    <strong>\xdd</strong> — This is used for finding characters given by a hexadecimal number dd</li>
+    <li>
+    <strong>\uxxxx </strong>— This is used for finding the Unicode character given by a hexadecimal number XXXX</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Brackets: </strong>You can group parts of a regular expression together by putting them inside round brackets or parentheses. You can use this to apply a quantifier to the entire group or to limit the alternation to a specific area of the regex. For grouping, only parenthesis can be used. A character class is defined by square brackets, while a quantifier with precise bounds is defined by curly braces. Let us look at some of the brackets which JavaScript allows:<ul>
+    <li>
+    <strong>[abc]</strong> — This is used for finding all the characters between the brackets</li>
+    <li>
+    <strong>(a|b|c)</strong> — This is used for finding all of the alternatives separated with |</li>
+    <li>
+    <strong>[^abc]</strong> — This is used for finding every character that is not in the brackets</li>
+    <li>
+    <strong>[0-9]</strong> — This is used for finding each digit from 0 to 9</li>
+    <li>
+    <strong>[A-z]</strong> — This is used for finding each character from uppercase A to lowercase z</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Quantifiers: </strong>Quantifiers provide the minimum number of instances of a character, group, or character class in the input required to find a match. The quantifiers supported by JavaScript are listed in the table below.<ul>
+    <li>
+    <strong>n+ </strong>— This is used for matching each string which is having one or more n</li>
+    <li>
+    <strong>n* </strong>— This is used for matching any string which is having zero or more occurrences of n</li>
+    <li>
+    <strong>n?</strong> — This is used for matching strings which are having zero or one occurrence of n</li>
+    <li>
+    <strong>^n </strong>— This is used for matching strings with n in the first place</li>
+    <li>
+    <strong>?=n </strong>— This is used for matching all strings which are followed by a particular string n</li>
+    <li>
+    <strong>?!n</strong> — This is used for matching strings that are not followed by a particular string ni</li>
+    <li>
+    <strong>n{X}</strong> — This is used for matching strings that contain a sequence of X n’s</li>
+    <li>
+    <strong>n{X,Y}</strong> — This is used for matching a string that contains a sequence of X to Y n’s</li>
+    <li>
+    <strong>n{X,}</strong> — This is used for matching all strings which are having a sequence of X or more n’s</li>
+    <li>
+    <strong>n$</strong> — This is used for matching all strings having n at the end.</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="numbers-and-math-in-js">
+              <h3>15. Numbers and Mathematics in JavaScript</h3>
+              <article class="ibpage-article">
+                <p>JavaScript provides various properties and methods to deal with Numbers and Maths. Let us have a quick look at those:</p><ul>
+    <li>
+    <strong>Numbers Properties:</strong><ul>
+    <li>
+    <strong>MAX VALUE</strong> — The maximum numeric value that JavaScript can represent.</li>
+    <li>
+    <strong>NaN</strong> — The "Not-a-Number" value is NaN.</li>
+    <li>
+    <strong>NEGATIVE INFINITY </strong>– The value of Infinity is negative.</li>
+    <li>
+    <strong>POSITIVE INFINITY </strong>– Infinity value that is positive.</li>
+    <li>
+    <strong>MIN VALUE</strong> — The smallest positive numeric value that JavaScript can represent.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Numbers Methods:</strong><ul>
+    <li>
+    <strong>toString() </strong>— Returns a string representation of an integer.</li>
+    <li>
+    <strong>toFixed()</strong> — Returns a number's string with a specified number of decimals.</li>
+    <li>
+    <strong>toPrecision()</strong> — Converts a number to a string of a specified length.</li>
+    <li>
+    <strong>valueOf()</strong> — Returns a number in its original form.</li>
+    <li>
+    <strong>toExponential()</strong> — Returns a rounded number written in exponential notation as a string.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Maths Properties:</strong><ul>
+    <li>
+    <strong>E</strong> — Euler's number is E.</li>
+    <li>
+    <strong>SQRT1_2</strong> — 1/2 square root</li>
+    <li>
+    <strong>SQRT2 </strong>stands for square root of two.</li>
+    <li>
+    <strong>LOG2E</strong> — E's base 2 logarithm</li>
+    <li>
+    <strong>LN2</strong> — The natural logarithm of 2 is LN2.</li>
+    <li>
+    <strong>LN10</strong> — The natural logarithm of ten is LN10.</li>
+    <li>
+    <strong>LOG10E </strong>— E's base ten logarithm</li>
+    <li>
+    <strong>PI</strong> — PI stands for Pianistic Integer.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Maths Methods:</strong><ul>
+    <li>
+    <strong>exp(x)</strong> — Ex's value</li>
+    <li>
+    <strong>floor(x)</strong> — x's value rounded to the nearest integer.</li>
+    <li>
+    <strong>log(x)</strong> — The natural logarithm (base E) of x is log(x).</li>
+    <li>
+    <strong>abs(x)</strong> — Returns the value of x in its absolute (positive) form.</li>
+    <li>
+    <strong>acos(x)</strong> — In radians, the arccosine of x.</li>
+    <li>
+    <strong>asin(x)</strong> — In radians, the arcsine of x.</li>
+    <li>
+    <strong>pow(x,y)</strong> — x to the power of y</li>
+    <li>
+    <strong>random()</strong> — Returns a number between 0 and 1 at random.</li>
+    <li>
+    <strong>round(x) </strong>— Rounds the value of x to the nearest integer.</li>
+    <li>
+    <strong>sin(x)</strong> — The sine of x is sin(x) (x is in radians)</li>
+    <li>
+    <strong>sqrt(x) </strong>— x's square root</li>
+    <li>
+    <strong>tan(x)</strong> — The angle's tangent</li>
+    <li>
+    <strong>atan(x) </strong>is the numeric value of the arctangent of x.</li>
+    <li>
+    <strong>atan2(y,x)</strong> — Arctangent of its arguments' quotient</li>
+    <li>
+    <strong>ceil(x) </strong>— x's value rounded to the next integer</li>
+    <li>
+    <strong>cos(x)</strong> – The cosine of x is cos(x) (x is in radians)</li>
+    <li>
+    <strong>max(x,y,z,...,n)</strong> — Returns the highest-valued number.</li>
+    <li>
+    <strong>min(x,y,z,...,n) </strong>— The number with the lowest value is the same as the number with the highest value.</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-dates">
+              <h3>16. JavaScript Date Objects</h3>
+              <article class="ibpage-article">
+                <p>Dates are extremely important to deal with while creating most types of applications. JavaScript also allows you to deal with and change dates and times. The next section of the JavaScript cheat sheet is how to work on dates:</p><ul>
+    <li>
+    <strong>Setting Dates: </strong>Dates can be set using the following three ways:<ul>
+    <li>
+    <strong>Date() </strong>— Returns a new date object that contains the current date and time.</li>
+    <li>
+    <strong>Date(1993, 6, 19, 5, 12, 50, 32) </strong>— We can create a custom date object with the pattern as Year, month, day, hour, minutes, seconds, and milliseconds are represented by the numbers. Except for the year and month, we can omit anything we like.</li>
+    <li>
+    <strong>Date("1999-12-22")</strong> — Date as a string declaration</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Getting the values of Time and Date: </strong>The following methods can be used for getting the date and time values in JavaScript:<ul>
+    <li>
+    <strong>getDate() </strong>returns the month's day as a number (1-31)</li>
+    <li>
+    <strong>getTime()</strong> — Get the milliseconds since January 1, 1970</li>
+    <li>
+    <strong>getUTCDate() </strong>returns the month's day (day) in the supplied date in universal time (also available for day, month, full year, hours, minutes etc.)</li>
+    <li>
+    <strong>getMilliseconds()</strong> — This function returns the milliseconds (0-999)</li>
+    <li>
+    <strong>getMinutes()</strong> — Returns the current minute (0-59)</li>
+    <li>
+    <strong>getMonth()</strong> returns the current month as a number (0-11)</li>
+    <li>
+    <strong>parse </strong>— &nbsp;It returns the number of milliseconds since January 1, 1970 from a string representation of a date.</li>
+    <li>
+    <strong>getDay()</strong> returns a number representing the weekday (0-6)</li>
+    <li>
+    <strong>getFullYear()</strong> returns the current year as a four-digit value (yyyy)</li>
+    <li>
+    <strong>getHours()</strong> — Returns the current hour (0-23)</li>
+    <li>
+    <strong>getSeconds()</strong> — Returns the second number (0-59)</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Setting a Part of the Dates: </strong>We can set a part of the dates in JavaScript using the following methods:<ul>
+    <li>
+    <strong>setDate()</strong> — Returns the current date as a number (1-31)</li>
+    <li>
+    <strong>setFullYear()</strong> — This function sets the year (optionally month and day)</li>
+    <li>
+    <strong>setMonth()</strong> — This function sets the month (0-11)</li>
+    <li>
+    <strong>setSeconds() </strong>— This function sets the seconds (0-59)</li>
+    <li>
+    <strong>setTime() </strong>— This function is used to set the time (milliseconds since January 1, 1970)</li>
+    <li>
+    <strong>setMinutes() </strong>— This function sets the minutes (0-59)</li>
+    <li>
+    <strong>setUTCDate() </strong>— According to universal time, sets the day of the month for a given date (also available for day, month, full-year, hours, minutes etc.)</li>
+    <li>
+    <strong>setHours() </strong>— Changes the time (0-23)</li>
+    <li>
+    <strong>setMilliseconds()</strong> — This function sets the milliseconds (0-999)</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-browser">
+              <h3>17. JavaScript Browser Objects</h3>
+              <article class="ibpage-article">
+                <p>JavaScript is also capable of taking note of the user's browser activity and incorporating its properties into the code, in addition to HTML elements.</p><ul>
+    <li>
+    <strong>Given below is a list of Window properties that JavaScript can take into account:</strong><ul>
+    <li>
+    <strong>history </strong>— Provides the window's History object.</li>
+    <li>
+    <strong>innerHeight </strong>— The content area of a window's inner height.</li>
+    <li>
+    <strong>innerWidth </strong>— The content area's inner width.</li>
+    <li>
+    <strong>closed</strong> — Returns true or false depending on whether or not a window has been closed.</li>
+    <li>
+    <strong>pageXOffset </strong>— The number of pixels offset from the centre of the page. The current document has been horizontally scrolled.</li>
+    <li>
+    <strong>pageYOffset</strong> — The number of pixels offset from the centre of the page. The document has been vertically scrolled.</li>
+    <li>
+    <strong>navigator</strong> — Returns the window's Navigator object.</li>
+    <li>
+    <strong>opener </strong>— Returns a reference to the window that created the window.</li>
+    <li>
+    <strong>outerHeight</strong> — A window's total height, including toolbars and scrollbars.</li>
+    <li>
+    <strong>outerWidth </strong>— A window's outside width, including toolbars and scrollbars.</li>
+    <li>
+    <strong>defaultStatus</strong> — Changes or restores the default text in a window's status bar.</li>
+    <li>
+    <strong>document </strong>— Returns the window's document object.</li>
+    <li>
+    <strong>frames</strong> — All &lt;iframe&gt; elements in the current window are returned by frames.</li>
+    <li>
+    <strong>length </strong>— Determine how many iframe&gt; elements are in the window.</li>
+    <li>
+    <strong>location </strong>— Returns the window's location object.</li>
+    <li>
+    <strong>name</strong> — Sets or retrieves a window's name.</li>
+    <li>
+    <strong>parent</strong> — The current window's parent window is called parent.</li>
+    <li>
+    <strong>screen </strong>— Returns the window's Screen object.</li>
+    <li>
+    <strong>screenLeft </strong>— The window's horizontal coordinate (relative to the screen)</li>
+    <li>
+    <strong>screenTop </strong>— The window's vertical coordinate.</li>
+    <li>
+    <strong>self </strong>— Returns the window that is currently open.</li>
+    <li>
+    <strong>status</strong> — Changes or restores the text in a window's status bar.</li>
+    <li>
+    <strong>top</strong> — Returns the browser window that is currently at the top of the screen.</li>
+    <li>
+    <strong>screenX</strong> — Identical to screenLeft, but required by some browsers</li>
+    <li>
+    <strong>screenY</strong> — Identical to screenTop, but required by some browsers</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Given below are the JavaScript methods which can work on the user's browser window:</strong><ul>
+    <li>
+    <strong>alert() </strong>— Shows a message and an OK button in an alert box.</li>
+    <li>
+    <strong>setInterval() </strong>— Calls a function or evaluates an expression at intervals defined by the user.</li>
+    <li>
+    <strong>setTimeout() </strong>— After a specified interval, calls a function or evaluates an expression.</li>
+    <li>
+    <strong>clearInterval()</strong> — Removes a timer that was started with setInterval() ()</li>
+    <li>
+    <strong>clearTimeout()</strong> — Removes the timer that was set with setTimeout() ()</li>
+    <li>
+    <strong>open() </strong>— This method creates a new browser window.</li>
+    <li>
+    <strong>print()</strong> — Prints the current window's content.</li>
+    <li>
+    <strong>blur()</strong> — Removes the current window's focus.</li>
+    <li>
+    <strong>moveBy()</strong> — Repositions a window with respect to its present position.</li>
+    <li>
+    <strong>moveTo()</strong> — This function moves a window to a specific location.</li>
+    <li>
+    <strong>close() </strong>— This function closes the currently open window.</li>
+    <li>
+    <strong>confirm() </strong>— Shows a dialogue box with a message and buttons to OK and Cancel.</li>
+    <li>
+    <strong>focus() </strong>— Sets the current window's focus.</li>
+    <li>
+    <strong>scrollBy()</strong> — Scrolls the document by a certain amount of pixels.</li>
+    <li>
+    <strong>scrollTo() </strong>— Scrolls the document to the supplied coordinates with the scrollTo() method.</li>
+    <li>
+    <strong>prompt() </strong>— Shows a conversation window asking for feedback from the visitor.</li>
+    <li>
+    <strong>resizeBy()</strong> — Resizes the window by the number of pixels supplied.</li>
+    <li>
+    <strong>resizeTo() </strong>— Resizes the window to the width and height supplied.</li>
+    <li>
+    <strong>stop() </strong>— This function prevents the window from loading.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Given below is a list of Screen properties that JavaScript can take into account:</strong><ul>
+    <li>
+    <strong>height</strong> — The screen's entire height.</li>
+    <li>
+    <strong>pixelDepth</strong> — The screen's colour resolution in bits per pixel.</li>
+    <li>
+    <strong>width </strong>— The screen's entire width.</li>
+    <li>
+    <strong>colorDepth </strong>— Gets the colour palette's bit depth for showing images.</li>
+    <li>
+    <strong>availableHeight</strong> — Returns the screen's height (excluding the Windows Taskbar).</li>
+    <li>
+    <strong>availableWidth </strong>— Returns the screen's width (excluding the Windows Taskbar).</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-events">
+              <h3>18. JavaScript Events</h3>
+              <article class="ibpage-article">
+                <p>Things that can happen to HTML components and are executed by the user in JavaScript are called events. These events can be detected by the programming language, which can then be used to activate code actions. Without them, no JavaScript cheat sheet would be complete. Let us take a look at some of the events supported by JavaScript:</p><ul>
+    <li>
+    <strong>Mouse Events:</strong><ul>
+    <li>
+    <strong>onclick</strong> – When a user clicks on an element, an event is triggered.</li>
+    <li>
+    <strong>oncontextmenu</strong> — When a user right-clicks on an element, a context menu appears.</li>
+    <li>
+    <strong>ondblclick </strong>— When a user double-clicks on an element, it is called ondblclick.</li>
+    <li>
+    <strong>onmousedown</strong> — When a user moves their mouse over an element, it is called onmousedown.</li>
+    <li>
+    <strong>onmouseenter</strong> — The mouse pointer is moved to a certain element.</li>
+    <li>
+    <strong>onmouseleave</strong> — The pointer leaves an element.</li>
+    <li>
+    <strong>onmousemove</strong> — When the pointer is over an element, it moves.</li>
+    <li>
+    <strong>onmouseover</strong> &nbsp;— When the cursor is moved onto an element or one of its descendants, the term onmouseover is used.</li>
+    <li>
+    <strong>onmouseout </strong>— When the user moves the mouse cursor away from an element or one of its descendants, it is called onmouseout.</li>
+    <li>
+    <strong>onmouseup</strong> — When a user releases a mouse button while hovering over an element, it is known as onmouseup.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Form Events:</strong><ul>
+    <li>
+    <strong>onblur</strong> — When an element loses focus, it is called onblur.</li>
+    <li>
+    <strong>onchange</strong> — A form element's content changes. (for the input&gt;, select&gt;, and textarea&gt; elements)</li>
+    <li>
+    <strong>onfocus</strong> – An aspect is brought into focus.</li>
+    <li>
+    <strong>onfocusin</strong> — When an element is ready to become the centre of attention.</li>
+    <li>
+    <strong>onfocusout </strong>—The element is about to lose focus.</li>
+    <li>
+    <strong>oninput </strong>— When a user inputs something into an element, it's called oninput.</li>
+    <li>
+    <strong>oninvalid </strong>— If an element isn't valid, it's called oninvalid.</li>
+    <li>
+    <strong>onreset </strong>— The state of a form is reset.</li>
+    <li>
+    <strong>onsearch </strong>— A user enters text into a search field (for input="search"&gt;).</li>
+    <li>
+    <strong>onselect </strong>— The user chooses some text (input&gt; and textarea&gt;).</li>
+    <li>
+    <strong>onsubmit </strong>— A form is filled out and submitted.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Drag Events</strong>:<ul>
+    <li>
+    <strong>ondrag </strong>— When an element is dragged, it is called ondrag.</li>
+    <li>
+    <strong>ondragend </strong>— The element has been dragged to its final position.</li>
+    <li>
+    <strong>ondragenter </strong>— When a dragged element enters a drop target, it is called ondragenter.</li>
+    <li>
+    <strong>ondragleave </strong>— When a dragged element departs the drop target, it is called ondragleave.</li>
+    <li>
+    <strong>ondragover </strong>— The dropped element is on top of the dragged element.</li>
+    <li>
+    <strong>ondragstart</strong> — The user begins dragging an element.</li>
+    <li>
+    <strong>ondrop </strong>— When a dragged element is dropped on a drop target, it is called ondrop.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Keyboard Events</strong>:<ul>
+    <li>
+    <strong>onkeydown </strong>— When the user presses a key down</li>
+    <li>
+    <strong>onkeypress </strong>— When the user begins to press a key.</li>
+    <li>
+    <strong>onkeyup </strong>— A key is released by the user.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Frame Events</strong>:<ul>
+    <li>
+    <strong>onabort</strong> — The loading of a media is aborted with onabort.</li>
+    <li>
+    <strong>onerror </strong>— When loading an external file, an error occurs.</li>
+    <li>
+    <strong>onpagehide</strong> – When a user leaves a webpage, it is called onpagehide.</li>
+    <li>
+    <strong>onpageshow </strong>— When the user navigates to a webpage</li>
+    <li>
+    <strong>onhashchange </strong>— The anchor component of a URL has been changed.</li>
+    <li>
+    <strong>onload </strong>— When an object has loaded</li>
+    <li>
+    <strong>onresize </strong>— The document view gets resized when onresize is called.</li>
+    <li>
+    <strong>onscroll </strong>— The scrollbar of an element is being scrolled.onbeforeunload — Before the document is due to be emptied, an event occurs.</li>
+    <li>
+    <strong>onunload </strong>— When a page is emptied, this event occurs.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Animation Events</strong>:<ul>
+    <li>
+    <strong>animationstart </strong>— The animation in CSS has begun.</li>
+    <li>
+    <strong>animationend </strong>— When a CSS animation is finished, it is called animationend.</li>
+    <li>
+    <strong>animationiteration </strong>— CSS animation is repeated using animationiteration.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Clipboard Events:</strong><ul>
+    <li>
+    <strong>oncut</strong> — The content of an element is cut by the user.</li>
+    <li>
+    <strong>onpaste </strong>— When a user pastes material into an element, it is called onpaste.</li>
+    <li>
+    <strong>oncopy </strong>— The content of an element is copied by the user.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Media Events:</strong><ul>
+    <li>
+    <strong>onloadeddata</strong> — Media data has been loaded</li>
+    <li>
+    <strong>onloadedmetadata</strong> — Metadata is loaded (such as size and duration).</li>
+    <li>
+    <strong>onloadstart</strong> — The browser begins looking for the media that has been specified.</li>
+    <li>
+    <strong>onabort </strong>— The loading of media has been halted.</li>
+    <li>
+    <strong>onerror</strong> — When an error occurs while loading an external file, the event onerror is triggered.</li>
+    <li>
+    <strong>onpause</strong> — Media is paused, either manually or automatically, by the user.</li>
+    <li>
+    <strong>onplay</strong> — The video or audio has begun or is no longer paused.</li>
+    <li>
+    <strong>onstalled </strong>— The browser is attempting to load the media, but it is not currently accessible.</li>
+    <li>
+    <strong>oncanplay </strong>— The browser has the ability to begin playing media (e.g. a file has buffered enough)</li>
+    <li>
+    <strong>oncanplaythrough</strong> — The browser is capable of playing media without pausing.</li>
+    <li>
+    <strong>ondurationchange </strong>— The media's duration changes.</li>
+    <li>
+    <strong>onended </strong>— The media's time has come to an end.</li>
+    <li>
+    <strong>onsuspend</strong> — The browser is not loading media on purpose.</li>
+    <li>
+    <strong>ontimeupdate </strong>— The situation has shifted (e.g. because of fast forward)</li>
+    <li>
+    <strong>onvolumechange</strong> — The volume of the media has changed (including mute)</li>
+    <li>
+    <strong>onwaiting </strong>— The media has taken a break, but it is anticipated to resume soon (for example, buffering)</li>
+    <li>
+    <strong>onplaying </strong>— Media that has been paused or halted for buffering is now playing.</li>
+    <li>
+    <strong>onprogress</strong> — The media is being downloaded by the browser.</li>
+    <li>
+    <strong>onratechange </strong>— The media's playback speed changes.</li>
+    <li>
+    <strong>onseeking</strong> — The user begins to move/skip.</li>
+    </ul>
+    </li>
+    <li>
+    <strong>Miscellaneous Events:</strong><ul>
+    <li>
+    <strong>transitionend</strong> — When a CSS transition is complete, this event is triggered.</li>
+    <li>
+    <strong>onmessage </strong>— The event source has received a message.</li>
+    <li>
+    <strong>onpopstate </strong>— When the history of the window changes</li>
+    <li>
+    <strong>onshow </strong>— A &lt;menu&gt; element is shown as a context menu when it is onshow.</li>
+    <li>
+    <strong>onoffline </strong>— The browser switches to offline mode.</li>
+    <li>
+    <strong>ononline</strong> — The browser enters the online mode.</li>
+    <li>
+    <strong>ontouchcancel </strong>— The user's ability to touch the screen has been halted.</li>
+    <li>
+    <strong>ontouchstart </strong>— The touch-screen is activated by placing a finger on it.</li>
+    <li>
+    <strong>onstorage </strong>— An part of Web Storage has been upgraded.</li>
+    <li>
+    <strong>ontoggle</strong> — The user toggles the details&gt; element open or closed.</li>
+    <li>
+    <strong>onwheel </strong>— The mouse wheel moves up and down when it passes over an element.</li>
+    <li>
+    <strong>ontouchend </strong>— A touch-screen user's finger is withdrawn.</li>
+    <li>
+    <strong>ontouchmove</strong> — When a finger is dragged over the screen, it is called ontouchmove.</li>
+    </ul>
+    </li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-event-propogation">
+              <h3>19. JavaScript Event Propagation</h3>
+              <article class="ibpage-article">
+                <p>Event propagation is a technique that governs how events propagate or travel through the DOM tree to reach their destination, as well as what happens to them once they arrive. Consider the following scenario: you have been given a click event handler to a hyperlink (i.e. &lt;a&gt; element) that's nested inside a paragraph (i.e. &lt;p&gt; element). The handler will now be executed if you click on that link. However, if you set the click event handler to the paragraph containing the link instead of the link, the handler will be triggered regardless of whether the link is clicked. Because events go up and down the DOM tree to reach their target, they don't merely affect the target element that triggered the event. This is known as event propagation.</p><figure class="image image_resized" style="width:75%;"><img data-src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/772/original/Event_Propagation_in_JavaScript.png?1644590441" class="lazy-elem"></figure><p>When an event is fired on an element with parent elements, the above picture shows how the event travels through the DOM tree at different stages of the event propagation. Event propagation in current browsers is divided into two phases: capturing and bubbling.</p><ul>
+    <li>
+    <strong>The Capturing Phase</strong>: In the capturing phase, events propagate from the Window down through the DOM tree to the target node. For example, if the user clicks a hyperlink, that click event would pass through the &lt;html&gt; element, the &lt;body&gt; element, and the &lt;p&gt; element containing the link. Also if any ancestor (i.e. parent, grandparent, etc.) of the target element and the target itself has a specially registered capturing event listener for that type of event, those listeners are executed during this phase.</li>
+    <li>
+    <strong>The Bubbling Phase: </strong>From the target element up to the Window, the DOM tree visits all of the target element's ancestors one by one. When a user hits a hyperlink, the click event passes via the &lt;p&gt; element containing the link, the &lt;body&gt; element, the &lt;html&gt; element, and the document node, for example. Additionally, if the target element or any of its ancestors have event handlers for that sort of event, those handlers are run during this phase. By default, all event handlers in current browsers are registered at the bubbling phase.</li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="asynchronous-js">
+              <h3>20. Asynchronous JavaScript</h3>
+              <article class="ibpage-article">
+                <p>A number of Web API features now use asynchronous code for running, especially those that access or fetch a resource from external devices, for instance, retrieving files from the network, accessing some database and returning data to it, accessing a video stream from a webcam, or broadcasting the display to a VR headset. There are two ways in which asynchronous coding can be done in JavaScript:</p><ul><li>
+    <strong>Async Callbacks: </strong>When invoking a function, async callbacks are functions that are passed as arguments and begin executing code in the background. When the background code is finished, it runs the callback function to notify you that the work is complete or that anything interesting has occurred. Callbacks are a little out of date these days, but they're still utilised in a lot of older but still popular APIs. The second parameter of the addEventListener() method is an example of an async callback:</li></ul><pre><code class="language-javascript hljs">buton.addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-function">() =&gt;</span> {
+     alert(<span class="hljs-string">'Button has been clicked!'</span>);
+     <span class="hljs-keyword">let</span> paraElement = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'p'</span>);
+     paraElement.textContent = <span class="hljs-string">'A new paragraph.'</span>;
+     <span class="hljs-built_in">document</span>.body.appendChild(paraElement);
+    });</code></pre><p>The first parameter specifies the type of event to be listened for, while the second specifies a callback function to be called when the event occurs. When we give a callback function as an input to another function, we are merely passing the function's reference; the callback function isn't immediately performed. It is asynchronously "called back" (thus the name) somewhere within the containing function's body. When the time comes, the contained function is in charge of calling the callback function.</p><ul><li>
+    <strong>Promises: </strong>Promises are a new async programming paradigm that you'll see in current Web APIs. The get() API, which is essentially a newer, more efficient version of XMLHttpRequest, is a nice example. Let's take a look at an example from our post Fetching data from the server:</li></ul><pre><code class="language-javascript hljs">fetch(items.json<span class="hljs-string">').then(function(res) {
+     return res.json();
+    }).then(function(json) {
+     let item = json;
+     initialise(item);
+    }).catch(function(e) {
+     console.log('</span>Fetch error: <span class="hljs-string">' + e.message);
+    });</span></code></pre><p>Here, fetch() takes a single argument: &nbsp;the URL of a network resource we wish to fetch and a promise is returned. A promise is an object that represents whether the async operation succeeded or failed. In a sense, it reflects a transitional condition. In essence, it's the browser's way of saying, "I promise to respond as quickly as I can," hence the name "promise."</p><blockquote><p>Note: Pyramid of Doom, also known as Callback Hell, is an anti-pattern found in asynchronous computer code. It is a slang phrase for a large number of interconnected "if" statements or functions. A few callbacks appear harmless if you do not expect your application logic to become too sophisticated. However, as your project's requirements grow, you will quickly find yourself with layers upon layers of nested callbacks. The usage of callbacks makes writing and maintaining code more challenging. It also makes it more difficult to identify the application's flow, which is a debugging roadblock, hence the problem's well-known nickname: Callback Hell. An example of callback hell is given below:</p></blockquote><pre><code class="language-javascript hljs">fs.readdir(source, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error, file</span>) </span>{
+     <span class="hljs-keyword">if</span> (error) {
+       <span class="hljs-built_in">console</span>.log(Problem occurred <span class="hljs-keyword">while</span> finding file: <span class="hljs-string">' + error)
+     } else {
+       file.forEach(function (filename, fileIndex) {
+         console.log(filename)
+         gm(source + filename).size(function (error, value) {
+           if (error) {
+             console.log(Problem occurred while identifying file size: '</span> + error)
+           } <span class="hljs-keyword">else</span> {
+             <span class="hljs-built_in">console</span>.log(filename + <span class="hljs-string">' : '</span> + value)
+             aspect = (values.width / values.height)
+             widths.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">width, widthIndex</span>) </span>{
+               height = <span class="hljs-built_in">Math</span>.round(width / aspect)
+               <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'resizing '</span> + filename + <span class="hljs-string">'to '</span> + height + <span class="hljs-string">'x'</span> + height)
+               <span class="hljs-built_in">this</span>.resize(width, height).write(dest + <span class="hljs-string">'w'</span> + width + <span class="hljs-string">'_'</span> + filename, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error</span>) </span>{
+                 <span class="hljs-keyword">if</span> (error) <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Problem occurred while writing file: '</span> + error)
+               })
+             }.bind(<span class="hljs-built_in">this</span>))
+           }
+         })
+       })
+     }
+    })</code></pre>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-memory-allocation-and-event-loop">
+              <h3>21. JavaScript Memory Allocation and Event Loop</h3>
+              <article class="ibpage-article">
+                <p>In JavaScript, memory allocation is done in the following regions:</p><ul><li>
+    <strong>Heap memory: </strong>Data is stored in random order and memory is allocated accordingly.</li></ul><figure class="image image_resized" style="width:50%;"><img data-src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/780/original/Heap_memory.png?1644590959" class="lazy-elem"></figure><ul><li>
+    <strong>Stack memory: </strong>Memory that is allocated in stacks. The majority of the time, it's employed for functions.</li></ul><figure class="image image_resized" style="width:50%;"><img data-src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/774/original/Stack_memory.png?1644590594" class="lazy-elem"></figure><p>The function stack is a function that maintains track of all other functions that are running at the same time. An example to illustrate it is as follows:</p><pre><code class="language-javascript hljs"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">second</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Second"</span>)
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">First</span>(<span class="hljs-params"></span>) </span>{
+    second()
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">foo</span>(<span class="hljs-params"></span>) </span>{
+    first()
+    }
+    foo()</code></pre><p>The order in which functions are executed, that is. when they are popped out of the stack once their purpose is completed, is as follows:</p><ol>
+    <li>console.log</li>
+    <li>second</li>
+    <li>first</li>
+    <li>foo</li>
+    </ol><ul><li>
+    <strong>Event loop: </strong>An event loop is something that pulls various things like methods, etc. out of the queue and places it onto the function execution stack whenever the function stack becomes empty. The event loop is the trick to making JavaScript appear multithreaded even if it is only single-threaded. The following illusion clearly explains how the event loop works:</li></ul><figure class="image image_resized" style="width:75%;"><img data-src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/775/original/Event_loop.png?1644590735" class="lazy-elem"></figure><p>The callback function in the event queue has not yet started and is waiting for its time to be added to the stack when SetTimeOut() is called and the Web API waits. The function is loaded onto the stack when the function stack becomes empty, as seen below:</p><figure class="image image_resized" style="width:75%;"><img data-src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/777/original/Event_loop_2.png?1644590788" class="lazy-elem"></figure><p>The event loop is used to take the first event from the Event Queue and place it on the stack, which in this case is the callback function. If this function is called from here, it will call other functions within it.</p><figure class="image image_resized" style="width:75%;"><img data-src="https://d3n0h9tb65y8q.cloudfront.net/public_assets/assets/000/002/779/original/Event_3.png?1644590872" class="lazy-elem"></figure>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="js-error-handling">
+              <h3>22. JavaScript Error Handling</h3>
+              <article class="ibpage-article">
+                <p>Various types of errors occur when we are coding in JavaScript. There are a few options for dealing with them:</p><ul>
+    <li>
+    <strong>try </strong>— We can define a code block for testing errors using the try block.</li>
+    <li>
+    <strong>catch </strong>— We can set up a block of code to execute in the event of an error using the catch statement.&nbsp;</li>
+    <li>
+    <strong>throw </strong>— Instead of the typical JavaScript errors, we can also create custom error messages using the throw statement.</li>
+    <li>
+    <strong>finally </strong>— JavaScript also allows us to run our code regardless of the outcome of try and catch.</li>
+    </ul><p>JavaScript possesses its own inbuilt error object which has the following properties:</p><ul>
+    <li>
+    <strong>name</strong> — It is used for setting or returning an error name.</li>
+    <li>
+    <strong>message </strong>— It is used for setting or returning the error message as a string.</li>
+    </ul><p>There are six types of ways in which the error property can return its name. They are as follows:</p><ul>
+    <li>
+    <strong>EvalError </strong>— It indicates that an error has occurred within the eval() method.</li>
+    <li>
+    <strong>RangeError</strong> — It indicates that some number is “out of range”.</li>
+    <li>
+    <strong>ReferenceError</strong> — &nbsp;It indicates that an illegal reference was occurring.</li>
+    <li>
+    <strong>SyntaxError</strong> — &nbsp;It indicates that a syntax error was occurring.</li>
+    <li>
+    <strong>TypeError </strong>— &nbsp;It indicates that a type error was occurring.</li>
+    <li>
+    <strong>URIError</strong> — &nbsp;It indicates that an encodeURI() error was occurring.</li>
+    </ul>
+              </article>
+            </section>
+            <section class="ibpage-article-header" id="es5-vs-es6">
+              <h3>23. ES5 Vs ES6: What is the Difference</h3>
+              <article class="ibpage-article">
+                <p>ECMAScript 5 (ES5P): Because it was launched in 2009, ES5 is also known as ECMAScript 2009. It has functions where developers concentrate on how items are created. In ES5, you must use the function keyword and return to define the function, just as you would in any other JavaScript language.</p><p>ECMAScript 6 (ES6): Because it was launched in 2015, ES6 is also known as ECMAScript 2015. Its class allows developers to create an object with the new operator and an arrow function if they don't need to use the function keyword to specify the function, and they can also avoid using the return keyword to get the computer value.</p><p>The key differences between ES5 and ES6 are as shown below:</p><figure class="table"><table>
+    <thead><tr>
+    <th>ES5</th>
+    <th>ES6</th>
+    </tr></thead>
+    <tbody>
+    <tr>
+    <td>Its year of release is 2009.&nbsp;</td>
+    <td>Its year of release is 2015.</td>
+    </tr>
+    <tr>
+    <td>It accepts string, integer, boolean, null, and undefined primitive data types.</td>
+    <td>JavaScript data types have some new features in ES6. It introduced the 'symbol' basic data type to support unique values.</td>
+    </tr>
+    <tr>
+    <td>Using the var keyword, there is only one way to define variables.</td>
+    <td>The keywords let and const are two new ways to define variables.</td>
+    </tr>
+    <tr>
+    <td>ES5 has a lower performance compared to ES6.</td>
+    <td>ES6 has a better performance compared to ES5.</td>
+    </tr>
+    <tr>
+    <td>Object manipulation in ES5 takes a longer time than ES6.</td>
+    <td>Object manipulation in ES6 takes a lesser time than ES5.</td>
+    </tr>
+    </tbody>
+    </table></figure><h3>Conclusion:</h3><p>As a programming language, JavaScript is gaining popularity. Because of its proven track record and benefits, it is becoming the language of choice for developing web properties. JavaScript based libraries like React, Angular, Nest, etc. are becoming popular day by day because of the ease with which they allow users to use JavaScript to build applications. We have compiled several of the most basic and important operators, functions, principles, and methods in the JavaScript cheat sheet above. It gives both experienced developers and beginners a good introduction of the language and serves as a reference. We hope you found it informative.</p><p><strong>Useful Resources:</strong></p><ul>
+    </ul>
+              </article>
+            </section>
+    
+      </div>
+</body>
+</html>
