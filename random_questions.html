@@ -1,0 +1,267 @@
+
+		<head>
+			<style type="text/css" media="screen">
+				body,html{font-family:var(--markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", system-ui, "Ubuntu", "Droid Sans", sans-serif);font-size:var(--markdown-font-size,14px);padding:0 26px;line-height:var(--markdown-line-height,22px);word-wrap:break-word}body{padding-top:1em}h1,h2,h3,h4,h5,h6,ol,p,pre,ul{margin-top:0}h2,h3,h4,h5,h6{font-weight:400;margin-bottom:.2em}img{max-width:100%;max-height:100%}a{text-decoration:none}a:hover{text-decoration:underline}a:focus,input:focus,select:focus,textarea:focus{outline:1px solid -webkit-focus-ring-color;outline-offset:-1px}p{margin-bottom:.7em}ol,ul{margin-bottom:.7em}hr{border:0;height:2px;border-bottom:2px solid}h1{padding-bottom:.3em;line-height:1.2;border-bottom-width:1px;border-bottom-style:solid;font-weight:400}table{border-collapse:collapse}th{text-align:left;border-bottom:1px solid}td,th{padding:5px 10px}table>tbody>tr+tr>td{border-top:1px solid}blockquote{margin:0 7px 0 5px;padding:0 16px 0 10px;border-left-width:5px;border-left-style:solid}code{font-family:var(--vscode-editor-font-family, "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace);font-size:1em;line-height:1.357em}body.wordWrap pre{white-space:pre-wrap}pre.hljs code>div,pre:not(.hljs){padding:16px;border-radius:3px;overflow:auto}pre code{color:var(--vscode-editor-foreground);tab-size:4}
+			</style>
+		</head>
+		<body>
+			<p>Some Random Notes</p>
+<ol>
+<li><pre><code> // what is pure function
+</code></pre>
+</li>
+<li><pre><code> console.log( -0 == 0 ); // true
+ console.log( -0 === 0 ); // true
+ console.log(Object.is(0, -0 ); // false
+
+ Object.is handle NaN and  -0
+ Use case of -0 :-  play direction at 0      
+</code></pre>
+</li>
+<li><p><strong>&quot;defineProperty&quot;</strong> is non enumerable mean it will not appear is looping property</p>
+<pre><code> const obj = {}
+ Object.defineProperty(obj,&quot;lang&quot;,{value:&quot;JS&quot;});
+ console.log(obj) // {}
+ console.log(obj.lang); // JS
+
+ const obj = {}
+ Object.defineProperty(obj,&quot;lang&quot;,{value:&quot;JS&quot;,enumerable:true});
+ console.log(obj) // {lang:&#39;JS&#39;}
+ console.log(obj.lang); // JS
+</code></pre>
+</li>
+<li><p>special keyword &#39;arguments&#39; is a function</p>
+<pre><code> function shows(){
+     console.log(&#39;0&#39;,arguments[0]); // 21
+     console.log(&#39;len&#39;,arguments.length); // 2
+     for(let x of arguments){
+         console.log(&#39;x&#39;,x);
+     }
+     console.log(Array.isArray(arguments)); // false
+ }
+ show (21,&quot;JS&quot;)
+
+ function shows(){
+     const arr = Array.prototype.slice.call(arguments)
+     arr.forEach(x =&gt; console.log(x)) // 21 JS
+ }
+</code></pre>
+</li>
+<li><p>make the length 0 </p>
+<pre><code> const arr = [1,3,5,6];
+ arr = []        // will not work cuz &#39;const&#39; 
+ arr.length = 0  // will work
+ arr.splice(0,arr.length)    // will work
+</code></pre>
+</li>
+</ol>
+<ol>
+<li><p>calling a function with <strong>new</strong> keyword</p>
+<pre><code> function SuperHero(){
+     this.hero =&quot;SuperMan&quot;
+ }
+
+ const hero1 = SuperHero()
+ const hero2 = new  SuperHero()
+
+ console.log(hero1) // undefined
+ console.log(hero2) // { hero: &#39;SuperMan&#39; }
+</code></pre>
+</li>
+<li><p>priority of <strong>return</strong> over <strong>new</strong> keyword</p>
+<pre><code> function SuperHero(){
+     this.hero =&quot;SuperMan&quot;
+     return {hero:&quot;BatMan&quot;}
+ }
+
+ const hero1 = SuperHero()
+ const hero2 = new  SuperHero()
+
+ console.log(hero1) // { hero: &#39;BatMan&#39; }
+ console.log(hero2) // { hero: &#39;BatMan&#39; }
+</code></pre>
+</li>
+<li><p>Preventing Calling a function without <strong>new</strong> keyword</p>
+<pre><code> function SuperHero(){
+     if(new.target){
+         this.hero =&quot;SuperMan&quot;
+     }else{
+         throw new Error(&quot;&#39;new&#39; keyword is not used&quot;)
+     }
+ }
+
+ const hero1 = new  SuperHero()
+ console.log(hero1)  // SuperHero { hero: &#39;SuperMan&#39; }
+
+ try{
+     const hero2 = SuperHero()
+     console.log(hero2)  // will not execute
+ }catch(e){
+     console.log(e.toString()) // Error: &#39;new&#39; keyword is not used
+ }
+</code></pre>
+</li>
+</ol>
+<ol>
+<li><p>NaN equality </p>
+<pre><code> console.log(NaN == NaN)     // false
+ console.log(NaN === NaN)    // false
+ console.log(isNaN(NaN))     // true
+ console.log(Number.isNaN(NaN))      //true
+ console.log(Object.is(NaN,NaN))     //true
+</code></pre>
+</li>
+<li><p>expression return value after execute</p>
+<pre><code> let a = 10
+ let b = 20
+ let c = 30 - ( a = b + 10)
+
+ console.log(`c = ${c}`) // c = 0
+</code></pre>
+</li>
+<li><p>Statically Typed Vs Dynamically Typed </p>
+</li>
+<li><p><strong>String.padStart</strong></p>
+<pre><code> let score;
+ let message ;
+
+ score = 2
+ message =`Your Score is ${String(score).padStart(3,&quot;0&quot;)}`
+ console.log(message) // 002
+
+ score = 32
+ message =`Your Score is ${String(score).padStart(3,&quot;0&quot;)}`
+ console.log(message) // 032
+
+ score = 231
+ message =`Your Score is ${String(score).padStart(3,&quot;0&quot;)}`
+ console.log(message) // 231
+
+ score = 3231
+ message =`Your Score is ${String(score).padStart(3,&quot;0&quot;)}`
+ console.log(message) // 3231
+</code></pre>
+</li>
+<li><p>An immediately invoked function expression, or IIFE (pronounced iffy), is a function that is called immediately after it is defined. </p>
+</li>
+<li><p>prevent scope using iffy</p>
+<pre><code> function show(){
+     {
+         var a = 9;
+         var b = 10; 
+     }
+     console.log(x,y) // x and y is accessible 
+ }
+
+ //solution
+ function show(){
+     (function(){
+         var a = 9;
+         var b = 10; 
+     })()
+     console.log(x,y) // ReferenceError
+ }
+</code></pre>
+</li>
+<li><p>Hitting Top MAX_SAFE_INTEGER</p>
+<pre><code> console.log(888888888888888888888) // 888888888888888900000
+ 
+ let num = 888888888888888888888
+ console.log(num) //888888888888888900000
+ console.log(num&lt;Number.MAX_SAFE_INTEGER) // false
+
+ num = 10
+ console.log(num&lt;Number.MAX_SAFE_INTEGER) // true
+</code></pre>
+</li>
+<li><p>Comparison </p>
+<pre><code> console.log(false == []); // true
+ // false == &quot;&quot;
+ // 0 == 0
+ // true
+
+ console.log(false == ![]); // true
+ // [] is truthy value 
+ // ![] is false
+ // false == false 
+ // true
+</code></pre>
+</li>
+<li><p>Magic Object [Getter Overriding]</p>
+<pre><code> const magicObject = {
+     flag :1,
+     get value(){
+         return this.flag++
+     }
+ };
+
+ if( magicObject.value === 1 
+     &amp;&amp; magicObject.value === 2 
+     &amp;&amp; magicObject.value === 3)
+     {console.log(&quot;I ❤️ JS&quot;)}
+</code></pre>
+</li>
+<li><p>Magic Object [toString Overriding ]</p>
+<pre><code> // comparison  NonPrimitive == Primitive
+ // 1. NonPrimitive will convert to Primitive by calling toString
+ // so we can override the toString method
+
+ let magicObject ={
+     flag : 1,
+     toString: function() {
+         return this.flag++
+     }
+ }
+
+ if (magicObject==1 &amp;&amp; 
+     magicObject==2 &amp;&amp; 
+     magicObject == 3)
+     {
+     console.log(&quot;This line will execute&quot;)
+     }
+</code></pre>
+</li>
+</ol>
+<ol>
+<li><p>Micro Task Queue [ will only execute only when main stack is empty]</p>
+<pre><code> console.log(&#39;A&#39;);
+
+ (async function(){
+     console.log(&#39;D&#39;)
+     const a = await &#39;1&#39; 
+     console.log(&#39;B&#39;);
+ })()
+
+ console.log(&#39;C&#39;);
+</code></pre>
+</li>
+<li><p>calling with context</p>
+<pre><code> const person = {
+     lang  : &quot;JS&quot;,
+     show:function(){
+         console.log(`Hi ${this.lang}`)
+     }
+ }
+
+ let fn = person.show
+
+ fn()            // Hi undefined
+ person.show()   // Hi JS
+ fn.call(person) // Hi JS
+</code></pre>
+</li>
+<li><p>String Immutability </p>
+<pre><code> let _name = &quot;JS&quot;
+ _name[0] = &#39;A&#39;
+ _name[1] = &#39;B&#39;
+
+ console.log(_name)// &#39;JS&#39;
+</code></pre>
+</li>
+<li><p>Primitive [call by value] [string,number,boolean,symbol,null,undefined]</p>
+</li>
+<li><p>Non-Primitive [call by reference  ARRAY OBJECT FUNCTION] [ heap]</p>
+</li>
+</ol>
+
+		</body>
