@@ -6,31 +6,156 @@
 		</head>
 		<body>
 			<ol>
-<li>Getting started with JavaScript<ol>
-<li>Before we begin</li>
-<li>Using console.log()</li>
-<li>Using Comments</li>
+<li><h2 id="getting-started-with-javascript">Getting started with JavaScript</h2>
+<ol>
+<li><h3 id="before-start">Before Start</h3>
+<p> Before we begain I want to make some treminology clear so that we will be on same page</p>
+<ul>
+<li><strong>variable</strong> - Place to something store</li>
+<li><strong>data-type</strong> - basicaly what kind of data</li>
+<li><strong>primitive</strong> - mean  &quot;very simple and not developed&quot; </li>
+<li><strong>primitive data-type</strong> - simple data type like number,string,null,NaN,undefiend; </li>
+<li><strong>non-primitive data-type</strong> - the data which is complex and can have multiple primitive or non primitive data inside it like array,objects</li>
+</ul>
+</li>
 </ol>
 </li>
-<li>JavaScript Variables<ol>
-<li>Defining a Variable</li>
-<li>Using a Variable.</li>
-<li>Types of Variables.</li>
-<li>Arrays and Objects</li>
+</ol>
+<!-- 1. JavaScript Variables
+    1. Defining a Variable
+    1. Using a Variable.
+    1. Types of Variables.
+    1. Arrays and Objects -->
+<ol>
+<li><h2 id="built-in-constants">Built-in Constants</h2>
+<ol>
+<li><p><em><strong>null</strong></em> is used for representing the intentional absence of an object value and is a primitive value. Unlike undefiend , <strong>null</strong> is not a property of the global object</p>
+</li>
+<li><p><em><strong>undefined</strong></em> is the absence of a value in the complier, because where it should be a value, there hasn&#39;t been put one, like the case of an unassigned variable.</p>
+</li>
+<li><p><em><strong>NaN</strong></em> is stand for <strong>&quot;Not a Number&quot;</strong>,When a mathematical function or operation in JavaScript cannot return a specific number. it return the value <code>NaN</code> instead</p>
+</li>
+<li><p><em><strong>undefined vs null</strong></em> </p>
+<ul>
+<li><strong>undefined</strong> is a global value that represents the absence of an assigned value.<blockquote>
+<p>typeof undefined === &#39;undefined&#39; // true</p>
+</blockquote>
+</li>
+<li><strong>null</strong> is an object that indicate that a variable has been explicitly assigend &quot;no value&quot;.<blockquote>
+<p>typeof null === &#39;object&#39; // true</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>Testing for NaN using isNaN() </p>
+<table>
+<thead>
+<tr>
+<th align="left">Code</th>
+<th align="center">Value</th>
+<th align="right">Explnation</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">isNaN(1)</td>
+<td align="center">false</td>
+<td align="right">1 is a number</td>
+</tr>
+<tr>
+<td align="left">isNaN(-2e-4)</td>
+<td align="center">false</td>
+<td align="right">-2e-4 is a number (-0.0002) in scientific notation</td>
+</tr>
+<tr>
+<td align="left">isNaN(Infinity)</td>
+<td align="center">false</td>
+<td align="right">Infinity is a number</td>
+</tr>
+<tr>
+<td align="left">isNaN(true)</td>
+<td align="center">false</td>
+<td align="right">converted to 1, which is a number</td>
+</tr>
+<tr>
+<td align="left">isNaN(false)</td>
+<td align="center">false</td>
+<td align="right">converted to 0, which is a number</td>
+</tr>
+<tr>
+<td align="left">isNaN (null)</td>
+<td align="center">false</td>
+<td align="right">converted to 0, which is a number</td>
+</tr>
+<tr>
+<td align="left">isNaN(&quot;&quot;);</td>
+<td align="center">false</td>
+<td align="right">converted to 0, which is a number</td>
+</tr>
+<tr>
+<td align="left">isNaN(&quot; &quot;)</td>
+<td align="center">false</td>
+<td align="right">converted to 0, which is a number</td>
+</tr>
+<tr>
+<td align="left">isNaN(&quot;45.3&quot;)</td>
+<td align="center">false</td>
+<td align="right">string representing a number, converted to 45.3</td>
+</tr>
+<tr>
+<td align="left">isNaN(&quot;1.2e3&quot;)</td>
+<td align="center">false</td>
+<td align="right">string representing a number, converted to 1.2e3</td>
+</tr>
+<tr>
+<td align="left">isNaN(&quot;Infinity&quot;)</td>
+<td align="center">false</td>
+<td align="right">string representing a number, converted to Infinity</td>
+</tr>
+<tr>
+<td align="left">isNaN(new Date)</td>
+<td align="center">false</td>
+<td align="right">Date object, converted to milliseconds since epoch</td>
+</tr>
+<tr>
+<td align="left">isNaN(&quot;10s&quot;)</td>
+<td align="center">true</td>
+<td align="right">conversion fails, the dollar sign is not a digit</td>
+</tr>
+<tr>
+<td align="left">isNaN (&quot;hello&quot;&#39;)</td>
+<td align="center">true</td>
+<td align="right">conversion fails, no digits at all</td>
+</tr>
+<tr>
+<td align="left"></td>
+<td align="center"></td>
+<td align="right"></td>
+</tr>
+</tbody></table>
+</li>
+<li><p>Infinity and -Infinity</p>
+</li>
+<li><p>Number constants
+ The Number constructor has some built in constants that can be useful</p>
+<ul>
+<li>Number.MAX_ VALUE; // 1.7976931348623157e+308</li>
+<li>Number.MAX_SAFE_INTEGER; // 9007199254740991</li>
+<li>Number.MIN VALUE; // 5e-324</li>
+<li>Number.MIN_SAFE_INTEGER; // -9007199254740991</li>
+<li>Number.EPSILON; // 0.0000000000000002220446049250313</li>
+<li>Number.POSITIVE INFINITY; // Infinity</li>
+<li>Number.NEGATIVE INFINITY; // -Infinity</li>
+<li>Number.NaN; // NaN</li>
+</ul>
+<p> In many cases the various operators in JavaScript will break with values outside the range of (Number.MIN_SAFE_INTEGER, Number. MAX_SAFE_INTEGER)</p>
+<p> <strong>Note</strong> that Number. EPSILON represents the different between one and the smallest Number greater than one, and thus the smallest possible difference between two different Number values. One reason to use this is due to the nature of how numbers are stored by JavaScript see Check the equality of two numbers</p>
+<!-- 1. Operations that return NaN</li>
+<li><p>Math library functions that return NaN --&gt;</p>
+</li>
 </ol>
 </li>
-<li>Built-in Constants<ol>
-<li>null.</li>
-<li>Testing for NaN using isNaN() </li>
-<li>NaN </li>
-<li>undefined and null</li>
-<li>Infinity and -Infinity</li>
-<li>Number constants</li>
-<li>Operations that return NaN</li>
-<li>Math library functions that return NaN</li>
-</ol>
-</li>
-<li>Strings<ol>
+<li><p>Strings</p>
+<ol>
 <li>Basic Info and String Concatenation</li>
 <li>Reverse String</li>
 <li>Comparing Strings Lexicographically</li>
@@ -50,7 +175,8 @@
 <li>Repeat a String.</li>
 </ol>
 </li>
-<li>Comparison Operations.<ol>
+<li><p>Comparison Operations.</p>
+<ol>
 <li>Abstract equality / inequality and type conversion</li>
 <li>NaN Property of the Global Object.</li>
 <li>Short-circuiting in boolean operators</li>
@@ -67,14 +193,16 @@
 <li>Grouping multiple logic statements</li>
 </ol>
 </li>
-<li>Conditions<ol>
+<li><p>Conditions</p>
+<ol>
 <li>   Ternary operators</li>
 <li>   Switch statement</li>
 <li>   Strategy</li>
 <li>   Using || and &amp;&amp; short circuiting</li>
 </ol>
 </li>
-<li>Arrays<ol>
+<li><p>Arrays</p>
+<ol>
 <li>Converting Array-like Objects to Arrays</li>
 <li>Reducing values</li>
 <li>Mapping values</li>
@@ -110,7 +238,8 @@
 <li>Copy part of an Array</li>
 </ol>
 </li>
-<li>Objects<ol>
+<li><p>Objects</p>
+<ol>
 <li>Shallow cloning</li>
 <li>Object.freeze</li>
 <li>Object cloning</li>
@@ -125,7 +254,8 @@
 <li>Object.keys.</li>
 </ol>
 </li>
-<li>Constructor functions<ol>
+<li><p>Constructor functions</p>
+<ol>
 <li>Declaring a constructor function</li>
 <li>Declarations and Assignments</li>
 <li>Modifying constants</li>
@@ -135,7 +265,8 @@
 <li>Data Types</li>
 </ol>
 </li>
-<li>Loops<ol>
+<li><p>Loops</p>
+<ol>
 <li>Standard &quot;for&quot; loops</li>
 <li>&quot;for ... of&quot; loop</li>
 <li>&quot;for ... in&quot; loop</li>
@@ -143,7 +274,8 @@
 <li>&quot;continue&quot; a loop</li>
 </ol>
 </li>
-<li>Functions<ol>
+<li><p>Functions</p>
+<ol>
 <li>Function Scoping</li>
 <li>Currying..</li>
 <li>Immediately Invoked Function Expressions</li>
@@ -159,7 +291,8 @@
 <li>Accepting Functions as Arguments</li>
 </ol>
 </li>
-<li>Classes<ol>
+<li><p>Classes</p>
+<ol>
 <li>Class Constructor</li>
 <li>Class Inheritance.</li>
 <li>Static Methods</li>
@@ -168,30 +301,35 @@
 <li>Dynamic Method Names</li>
 </ol>
 </li>
-<li>Context (this)<ol>
+<li><p>Context (this)</p>
+<ol>
 <li>this with simple objects</li>
 <li>Saving this for use in nested functions / objects</li>
 <li>Binding function context</li>
 <li>this in constructor functions</li>
 </ol>
 </li>
-<li>Setters and Getters<ol>
+<li><p>Setters and Getters</p>
+<ol>
 <li>Defining a Setter/Getter Using Object. defineProperty</li>
 <li>Defining an Setter/Getter in a Newly Created Object</li>
 <li>Defining getters and setters in ES6 class</li>
 </ol>
 </li>
-<li>Callbacks<ol>
+<li><p>Callbacks</p>
+<ol>
 <li>Simple Callback Usage Examples</li>
 <li>What is a callback?</li>
 </ol>
 </li>
-<li>The Event Loop.<ol>
+<li><p>The Event Loop.</p>
+<ol>
 <li>The event loop in a web browser</li>
 <li>Asynchronous operations and the event loop</li>
 </ol>
 </li>
-<li>Promises <ol>
+<li><p>Promises </p>
+<ol>
 <li>Introduction.</li>
 <li>Promise chaining.</li>
 <li>Waiting for multiple concurrent promises</li>
@@ -207,7 +345,8 @@
 <li>Asynchronous API request</li>
 </ol>
 </li>
-<li>Async functions (async/await) <ol>
+<li><p>Async functions (async/await) </p>
+<ol>
 <li>Introduction</li>
 <li>Await and operator precedence</li>
 <li>Async functions compared to Promises.</li>
@@ -216,7 +355,8 @@
 <li>Simultaneous async (parallel) operations</li>
 </ol>
 </li>
-<li>Appendix A: JavaScript in Browser Introduction..<ol>
+<li><p>Appendix A: JavaScript in Browser Introduction..</p>
+<ol>
 <li>Using the DOM API.</li>
 <li>Using window.alert</li>
 <li>Using window.prompt</li>
